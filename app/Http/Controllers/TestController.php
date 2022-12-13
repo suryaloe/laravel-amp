@@ -19,8 +19,7 @@ class TestController extends Controller
 &mdash; AMP Project (@AMPhtml) <a href="https://twitter.com/AMPhtml/status/1248666798901194753?ref_src=twsrc%5Etfw">April 10, 2020</a></blockquote>
 ';
 
-        $amp = new AmpHtml();
-        return $amp->generateHtml($html);
+        return AmpHtml::generateHtml($html);
         
     }
 }

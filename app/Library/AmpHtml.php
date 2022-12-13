@@ -4,7 +4,7 @@ require_once(dirname(__FILE__) .  '/amphtml/vendor/autoload.php');
 use magyarandras\AMPConverter\Converter;
 
 class AmpHtml {
-    public function generateHtml($str) {
+    public static function generateHtml($str) {
         $converter = new Converter();
         $converter->loadDefaultConverters();
         $amphtml = $converter->convert($str);
